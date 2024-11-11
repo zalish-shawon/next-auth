@@ -1,9 +1,11 @@
+// Getting All json data 
 export async function GET() {
     return Response.json({
         comments
     })
 }
 
+// New comments added
 export async function POST(req) {
     const newComments = req.json();
     comments.push({
@@ -16,7 +18,6 @@ export async function POST(req) {
         comments,
     })
 }
-
 
 const comments = [
     {
