@@ -8,6 +8,11 @@ const Dashboard = () => {
     const auth = getAuth(app);
     const router = useRouter();
 
+    // const metaData = {
+    //     meta: "meta",
+    //     URL: "http://localhost:5000"
+    // }
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             // Only runs on the client
